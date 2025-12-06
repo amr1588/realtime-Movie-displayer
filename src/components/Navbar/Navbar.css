@@ -1,0 +1,64 @@
+.navbarContainer nav a {
+    color: wheat;
+    transition: all 0.3s ease;
+}
+
+.navbarContainer nav a:hover {
+    color: rgb(240, 192, 103);
+}
+
+.ul1, .ul2 {
+    position: relative;
+}
+
+.ul1::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    bottom: 9px;
+    height: 1px;
+    width: 0px;
+    background-color: rgb(240, 192, 103);
+    transition: all 0.3s ease;
+}
+
+.ul2::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: 9px;
+    height: 1px;
+    width: 0px;
+    background-color: rgb(240, 192, 103);
+    transition: all 0.3s ease;
+}
+
+.ul1:hover::after {
+    width: 79%;
+}
+
+.ul2:hover::after {
+    width: 80%;
+}
+
+.nav-link.logOut {
+    border-radius: 12px;
+    color: red;
+}
+
+.nav-link.logOut:hover {
+    background-color: rgb(60, 57, 57);
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .ul1:hover::after {
+        width: 0;
+    }
+
+    .ul2:hover::after {
+        width: 0;
+    }
+}

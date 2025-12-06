@@ -1,0 +1,97 @@
+.card {
+    background-color: #1a1a1a !important;
+}
+
+.box-size {
+    width: 24.2%;
+}
+
+
+
+.card .heartLayer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    font-size: larger;
+    z-index: 2;
+    opacity: 0;
+}
+
+.image-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1) 0%,
+
+            rgba(0, 0, 0, 0.4) 50%,
+
+            rgba(0, 0, 0, 0.7) 90%);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.card :hover .heartLayer, .card:hover .card-upper .image-gradient-overlay {
+    opacity: 1;
+}
+
+.card .card-upper .heartLayer {
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card .card-upper .heartLayer:hover {
+    color: red;
+    font-size: 19px;
+    border: 1px solid red;
+}
+
+.toast-notification {
+    position: absolute;
+    top: 10px;
+    left: 36%;
+    background-color: rgba(46, 41, 41, 0.8);
+    color: red;
+    width: 25%;
+    border-radius: 4px;
+    font-size: 15px;
+    z-index: 10;
+    text-align: center;
+}
+
+.card {
+    transition: all 0.5s ease-out;
+}
+
+.card.card-loading {
+    transform: translateY(60px);
+    opacity: 0;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .box-size {
+        width: 48%;
+    }
+
+    .toast-notification {
+        position: absolute;
+        top: 10px;
+        left: 36%;
+        background-color: rgba(46, 41, 41, 0.8);
+        color: red;
+        width: 29%;
+        border-radius: 4px;
+        font-size: 15px;
+        z-index: 10;
+        text-align: center;
+    }
+}

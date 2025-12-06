@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.loginBackGround {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url('./assets/Form_background.png');
+  background-position: center;
+}
+
+.loginBackGround .loginBox {
+  background-color: #1c1c1e;
+}
+
+form .googleBtn {
+  border: none;
+  outline: none;
+  border: 1px solid rgb(148, 146, 146);
+  border-radius: 5px;
+  background-color: #2c2c2e;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+form .lineFormat {
+  position: relative;
+}
+
+form .lineFormat::before {
+  content: '';
+  position: absolute;
+  border: 1px solid white;
+  top: 50%;
+  left: 3px;
+  width: 46%;
+}
+
+form .lineFormat::after {
+  content: '';
+  position: absolute;
+  border: 1px solid white;
+  top: 50%;
+  right: 3px;
+  width: 46%;
+}
+
+label {
+  color: white;
+}
+
+form input {
+  border: none;
+  outline: none;
+  background-color: #2c2c2e;
+  border-radius: 5px;
+  color: rgb(218, 209, 198);
+}
+
+
+form i {
+  color: rgb(202, 87, 87);
+}
+
+form p {
+  color: rgb(218, 209, 198);
+}
+
+form a {
+  text-decoration: none;
+  color: rgb(218, 209, 198);
+}
+
+form .gb:hover {
+  border: 1px solid rgb(176, 113, 113);
+  color: rgb(196, 181, 181);
+}
+
+form .sn:hover {
+  border: 1px solid rgb(176, 113, 113);
+  color: red
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: rgb(180, 159, 159);
+}
+
+
+/* .................................home.jsx..................................... */
+
+.bg {
+  background-color: #242424;
+}
+
+.homeSecsion input, button {
+  border: none;
+  outline: none;
+  background-color: rgb(198, 170, 119);
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+
+.homeSecsion .srchBtn {
+  border-radius: 5px;
+}
+
+.homeSecsion .srchBtn:hover {
+  cursor: default;
+}
+
+/* .................................favorite.jsx..................................... */
+
+
+.dark {
+  background-color: #161616;
+}
+
+.favoritePage .favoriteCard {
+  background-color: #2f2f2f;
+  transform: translateY(70px);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .favoritePage .favoriteCard {
+
+    width: 120%;
+    padding: 0px 10px;
+  }
+}

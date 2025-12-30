@@ -11,7 +11,7 @@ export default function Favourites() {
   const showNoFavorites = favorites.length > 0;
 
   return (
-    <div className='bg-dark h-100'>
+    <div className="bg-dark min-vh-100">
       {showNoFavorites ? (
         <div className="container-fluid h-100 py-3">
           <div className="d-flex flex-wrap gap-2">

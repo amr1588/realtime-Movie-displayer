@@ -35,7 +35,7 @@ export default function Movie() {
     </div>;
 
   return (
-    <div className="bg-dark vh-100">
+    <div className="bg-dark min-vh-100">
       <div className="container text-white pt-5 ">
         <div className="row">
           <div className="col-md-4">
@@ -45,7 +45,7 @@ export default function Movie() {
               alt={movieDetails.title}
             />
           </div>
-          <div className="col-md-6">
+          <div className="col-md-8 pt-3">
             <h1 className="fw-bold">{movieDetails.title}</h1>
             <p className="text-warning fs-4">
               Rating: {movieDetails.vote_average}
